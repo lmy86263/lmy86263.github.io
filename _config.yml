@@ -1,7 +1,8 @@
 # Site settings
-title: "关于生活、工作和爱好的一些记录"
+title: "关于学习、生活和爱好的一些记录"
 author: "李梦阳"
 # description: "This is a blog about software, some mathematics, and the occasional philosophy. Not necessarily in that order."
+description: 这个博客主要记录学习到的一些东西，包括但不限于算法、编程、机器学习等，也会包括一些生活点滴和感悟。
 # keywords: "Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles"
 # biography: "I am a Professor of Software Engineering at the <a href='http://www.fe.up.pt'>Faculty of Engineering</a>, University of Porto and Senior Researcher at <a href='https://www.inesctec.pt'>INESC TEC</a>. Here you can find my <a href='/assets/thesis.pdf'>PhD Thesis</a> and my <a href='/assets/cv.pdf'>Résumé</a>."
 biography: "博主男性，姓名不便透露，人送外号糙汉，昵称糙糙，爱好健身、编码、非专业军迷，同时也是老和山职业技术学院的一名在读博士。"
