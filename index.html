@@ -61,7 +61,7 @@ layout: default
     {% assign categories = site.categories | sort %}
     {% for category in categories %}
     <h3 class="mt-4">{{ category | first }}</h3>
-    <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;
+    <p>{% for post in category[1] %}{{ post.date | date: "%Y-%m-%d" }}.&nbsp;
       <a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">
         {{ post.title }}
         <br>
