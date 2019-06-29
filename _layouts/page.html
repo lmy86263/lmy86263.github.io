@@ -22,7 +22,14 @@ layout: default
       {% if page.abstract %}
       <div class="mb-4">{{ page.abstract }}</div>
       {% endif %}
-      {{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+      <section id="main">
+          <header>
+              <div id="renderIn"></div>
+          </header>
+          {{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+      </section>
+      
+
     </article>
   </div>
 </div>

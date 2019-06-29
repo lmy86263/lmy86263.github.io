@@ -101,16 +101,17 @@ article {
   > :first-child {
     min-height: 2em + $base-line-height;
 
-    &::first-letter {
-      color: $alt-color-darker;
-      float: left;
-      font-size: 3.4em;
-      line-height: .7em;
-      font-family: $title-font-family;
-      font-style: normal;
-      font-weight: bold;
-      margin: .12em .15em 0 -.02em;
-    }
+    // used to help page's first child capitalize
+    // &::first-letter {
+    //   color: $alt-color-darker;
+    //   float: left;
+    //   font-size: 3.4em;
+    //   line-height: .7em;
+    //   font-family: $title-font-family;
+    //   font-style: normal;
+    //   font-weight: bold;
+    //   margin: .12em .15em 0 -.02em;
+    // }
   }
 
   br {
@@ -336,6 +337,13 @@ sup > .footnote {
 
 :not(code) > table {
   border-spacing: 2em .1em;
+}
+
+#toc {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  margin-left: 0em
+
 }
 
 table {

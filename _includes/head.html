@@ -21,6 +21,33 @@
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/PT+Serif:400,400i,700,700i:f">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/css/toc.css" | prepend: site.baseurl }}" />
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{ "/javascripts/jquery.toc.js" | prepend: site.baseurl }} "></script>
+
+  <script type="text/javascript">
+    $(function() {
+      $('#main').toc({
+        showAlways: true,
+        renderIn:'#renderIn',
+        contentsText:"目录",
+        hideText:'收起',
+        showText:'展开',
+        showCollapsed: false,
+        minItemsToShowToc: 6
+      });
+    });
+    </script>
+
+
+  <style type="text/css">
+    #renderIn {
+      margin-left: 0em;
+    }
+    </style>
 
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -54,8 +81,10 @@
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  
   <script src="https://use.fontawesome.com/4bee85bf94.js"></script>
+
+  
 
   {% if page.custom_css %} {% for css_file in page.custom_css %}
   <link rel="stylesheet" href="/css/{{ css_file }}.css">
